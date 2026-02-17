@@ -48,8 +48,8 @@ st.write("Enter your lifestyle details to monitor eye health risk")
 # -------------------------------
 # Tabs
 # -------------------------------
-tab1, tab2, tab3 = st.tabs(
-    ["🔍 Prediction", "📊 Explainable AI", "ℹ️ About Project"]
+tab1, tab2 = st.tabs(
+    ["🔍 Prediction", "📊 Explainable AI"]
 )
 
 # ===============================
@@ -242,29 +242,3 @@ with tab2:
     ax2.barh(features, importance)
     ax2.set_xlabel("Importance Score")
     st.pyplot(fig2)
-
-# ===============================
-# TAB 3: About Project
-# ===============================
-with tab3:
-    st.markdown("""
-    ### 🎓 Project Overview
-    This system predicts eye health risk using Machine Learning.
-
-    ### 🚀 Advanced Features
-    - Real-Time Monitoring
-    - Risk Score (0–100)
-    - Alert System
-    - Future Simulation
-    - Explainable AI
-    - User History Tracking
-    - Risk Trend Analytics
-    - PDF Report Generation
-
-    ### 🛠 Technologies Used
-    - Python
-    - Streamlit
-    - Scikit-learn
-    - Random Forest
-    - ReportLab
-    """)
